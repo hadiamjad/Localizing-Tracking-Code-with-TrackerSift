@@ -1,0 +1,172 @@
+<html>
+<head>
+<style>
+        
+        body {
+        font-family: monospace;
+        word-wrap: break-word;
+        background-color:#ededed;
+        width: 500px;
+        height: 400px;
+        }
+
+        p {
+        display:block;
+        }
+
+        input {
+        text-align: center;
+        }
+
+        #main {
+        width: 500px;
+        height: 400px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        }
+
+        #container {
+        width: 99%;
+        height: 95%;
+        border: 3px;
+        display: block;
+        border-style: solid;
+        border-color: black;
+        overflow: scroll;
+        border-radius: 10px;
+        box-shadow: 5px 5px #888888;
+        }
+
+        .dropbtn {
+        background-color: #D8D8D8;
+        color: black;
+        margin: 16px;
+        margin: 0px;
+        font-size: 14px;
+        padding-left: 7%;
+        padding-bottom: 2%;
+        border: none;
+        position: relative;
+        overflow-y: auto;
+        border-radius: 10px;
+        }
+
+        .dropdown {
+        width: 90%;
+        position: relative;
+        margin-left:5%;
+        margin-right: 5%; 
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: block;
+        overflow-y: scroll;
+        border-radius: 10px;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        overflow-y: scroll;
+        border-radius: 10px;     
+        }
+
+        .dropdown-content p {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        overflow-y: auto;
+        }
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #F79A9D;}
+        
+        /* button styling */
+        .button {
+        display: inline-block;
+        border-radius: 10px;
+        background-color:green;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 18px;
+        width: 97%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 15px;
+        }
+
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+</style>
+<script src="popup.js"></script>
+</head>
+        <body >
+                <h2 style="background-color:#D8D8D8;font-size: 24px;font-family: 'Lucida Console', 'Courier New', monospace;text-align: center;">TrackerSift</h2>
+                <p>Tracking resources at this webpage. Hover to see the associated tracking requests</p>
+
+                <div id="main">
+                        <div id="container">
+                                <!-- <div class="dropdown">
+                                        <p class="dropbtn" style="background-color: #F8D568;">Domain : doubleclick.net<input type="checkbox"></p>
+                                        <div class="dropdown-content">
+                                          <p>Link 1</p>
+                                          <p>Link 1</p>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown">
+                                        <p class="dropbtn" style="background-color: #F9B75D;">Hostname : adservice.google.com<input type="checkbox"></p>
+                                        <div class="dropdown-content">
+                                          <p>Link 1</p>
+                                          <p>Link 1</p>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown">
+                                        <p class="dropbtn" style="background-color: #F99853;">Script : https://securepubads.g.doubleclick.net/gpt/pubads_impl_2021111601.js<input type="checkbox"></p>
+                                        <div class="dropdown-content">
+                                          <p>Link 1</p>
+                                          <p>Link 1</p>
+                                        </div>
+                                      </div>
+                                      <div class="dropdown">
+                                        <p class="dropbtn" style="background-color: #FA7A48;">Method : https://freelancewritinggigs.com/detroitchicago/cmbv2.js?gcb=195-0&amp;cb=04-1y02-5y06-12y07-1y19-5y0b-5y0d-14y13-3y17-4y1a-2y1e-2y1d-5y1f-3y32-22y51-1&amp;cmbcb=20&amp;sj=x04x02x06x07x19x0bx0dx13x17x1ax1ex1dx1fx32x51@__ez.dot.Fire<input type="checkbox"></p>
+                                        <div class="dropdown-content">
+                                          <p>Link 1</p>
+                                          <p>Link 1</p>
+                                        </div>
+                                      </div> -->
+                        </div> 
+                        <button class="button" style="vertical-align:middle"><span>Block These For Me</span></button>
+                </div>
+        </body>
+</html>
+

@@ -1,0 +1,16 @@
+{
+    "name": "TrackerSift",
+    "description": "Progressively untangles mixed web resources",
+    "version": "0.7",
+    "permissions": [
+        "debugger","tabs","webRequest","webRequestBlocking","*://*/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
